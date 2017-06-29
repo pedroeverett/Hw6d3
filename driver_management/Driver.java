@@ -2,8 +2,8 @@ package driver_management;
 import behaviours.*;
 
 public class Driver{
-  String name;
-  Driveable vehicle;
+  private String name;
+  private Driveable vehicle;
 
   public Driver(String name, Driveable vehicle){
     this.name = name;
@@ -14,12 +14,13 @@ public class Driver{
     return this.name;
   }
 
+  public String getBrand() {
+    return this.vehicle.getBrand();
+  }
+
   public void setVeicle(Driveable vehicle){
     this.vehicle = vehicle;
   }
 
-  public String getBrand() {
-    return this.vehicle.getBrand();
-  }
 
 }

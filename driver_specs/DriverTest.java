@@ -1,15 +1,16 @@
 import static org.junit.Assert.*;
 import org.junit.*;
 import driver_management.*;
+import behaviours.*;
 
 public class DriverTest {
   Driver driver;
-  DodgemCar dodgemCar;
+  Driveable vehicle;
 
   @Before
   public void before() {
-    driver = new Driver("Pedro", dodgemCar);
-    dodgemCar = new DodgemCar("Bumper", "Black", 60, 4);
+    vehicle = new DodgemCar("Bumper", "Black", 60, 4);
+    driver = new Driver("Pedro", vehicle);
   }
 
   @Test

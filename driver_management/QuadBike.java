@@ -3,12 +3,12 @@ import behaviours.*;
 
 public class QuadBike extends Vehicles implements Driveable {
  
-  int cc;
+  private int cc;
 
   public QuadBike(String brand, String colour, int avgSpeed, int cc){
     super(brand, colour, avgSpeed);
     this.cc = cc;
-   
+
     
   }
 

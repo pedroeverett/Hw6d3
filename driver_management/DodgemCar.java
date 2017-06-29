@@ -3,7 +3,7 @@ import behaviours.*;
 
 public class DodgemCar extends Vehicles implements Driveable {
 
-  int seats;
+  private int seats;
 
   public DodgemCar(String brand, String colour, int avgSpeed, int seats){
     super(brand, colour, avgSpeed);
