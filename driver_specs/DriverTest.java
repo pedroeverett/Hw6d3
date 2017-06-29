@@ -9,6 +9,18 @@ public class DriverTest {
   @Before
   public void before() {
     driver = new Driver("Pedro", dodgemCar);
-    dodgemCar = new DodgemCar(60);
+    dodgemCar = new DodgemCar("Bumper", "Black", 60, 4);
+  }
+
+  @Test
+  public void checkDriverName() {
+    assertEquals("Pedro", driver.getName());
+  }
+
+  @Test 
+  public void canSetVeicle() {
+    QuadBike quadBike = new QuadBike("Honda", "Red", 50, 500);
+    driver.setVeicle(quadBike);
+    assertEquals("Honda", driver.getBrand());
   }
 }

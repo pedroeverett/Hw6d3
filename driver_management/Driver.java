@@ -3,13 +3,23 @@ import behaviours.*;
 
 public class Driver{
   String name;
-  Driveable ride;
+  Driveable vehicle;
 
-  public Driver(String name, Driveable ride){
+  public Driver(String name, Driveable vehicle){
     this.name = name;
-    this.ride = ride;
+    this.vehicle = vehicle;
   }
 
+  public String getName() {
+    return this.name;
+  }
 
+  public void setVeicle(Driveable vehicle){
+    this.vehicle = vehicle;
+  }
+
+  public String getBrand() {
+    return this.vehicle.getBrand();
+  }
 
 }
